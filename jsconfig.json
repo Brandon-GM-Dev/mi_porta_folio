@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "ignoreDeprecations": "6.0",   // <--  silencia warning en baseUrl
+        "paths": {
+        "@/*": ["./src/*"],
+        "@assets/*": ["./src/assets/*"],
+        "@components/*": ["./src/components/*"],
+        "@constants/*": ["./src/constants/*"],
+        "@layouts/*": ["./src/layouts/*"],
+        "@plugins/*": ["./src/plugins/*"],
+        "@router/*": ["./src/router/*"],
+        "@stores/*": ["./src/stores/*"],
+        "@views/*": ["./src/views/*"],
+        "@documents/*": ["./public/documents/*"]
+        }
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules", "dist"]
+}
