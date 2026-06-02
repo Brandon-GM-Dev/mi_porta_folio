@@ -1,17 +1,23 @@
-import { createRouter, createWebHistory } from 'vue-router';
-import HomeView from '@views/portafolio/PortaFolio.vue';
+import { createRouter, createWebHistory } from "vue-router";
+import PortaFolio from "@views/portafolio/PortaFolio.vue";
 
-const routes = [
-  {
-    path: '/',
-    name: 'Home',
-    component: HomeView
-  }
-]
+import BaseLayout from "@layouts/BaseLayout.vue";
 
 const router = createRouter({
   history: createWebHistory(),
-  routes
-})
+  routes: [
+    {
+      path: "/",
+      component: BaseLayout,
+      children: [
+        {
+          path: "",
+          name: "PortaFolio",
+          component: PortaFolio,
+        },
+      ],
+    },
+  ],
+});
 
-export default router
+export default router;

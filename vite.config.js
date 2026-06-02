@@ -27,4 +27,8 @@ export default defineConfig({
       "@documents": fileURLToPath(new URL("./public/documents", import.meta.url)),
     },
   },
+  server:{
+    host: '0.0.0.0',  //  Para compartir de forma local
+    port: 5173,       //  Para compartir de forma local
+  },
 })

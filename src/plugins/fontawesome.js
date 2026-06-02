@@ -2,20 +2,23 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import {
 
   faBars,
-  
-  // ... se pueden agregar mas iconos aqui :3
+  faMicrochip,
+  faXmark,
+
+  // ... iconos version solida
 } from "@fortawesome/free-solid-svg-icons";
 
 import {
-  faCircle as faCircleRegular,
+  faMoon,
+  faSun,
 
-  // ... versión regular
+  // ... iconos version regular
 } from "@fortawesome/free-regular-svg-icons";
 
 import {
   faSquareFacebook,
 
-
+  // ... iconos de companias
 } from "@fortawesome/free-brands-svg-icons";
 
 
@@ -23,13 +26,15 @@ library.add(
 
   // Solid
   faBars,
-  
+  faMicrochip,
+  faXmark,
+  faSun,
 
   // Regular
-  faCircleRegular,
+  faMoon,
 
   // Brands
   faSquareFacebook,
 
-  // poner aqui tambien los iconos de arriba...
+  // ... poner aqui tambien los iconos de arriba
 );
