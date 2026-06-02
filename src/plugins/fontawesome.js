@@ -16,7 +16,13 @@ import {
 } from "@fortawesome/free-regular-svg-icons";
 
 import {
-  faSquareFacebook,
+  faDiscord,
+  faLinkedin,
+  faSquareGithub,
+  faSquareWhatsapp,
+  faSquareXTwitter,
+  faTelegram,
+  faWhatsapp,
 
   // ... iconos de companias
 } from "@fortawesome/free-brands-svg-icons";
@@ -34,7 +40,13 @@ library.add(
   faMoon,
 
   // Brands
-  faSquareFacebook,
+  faDiscord,
+  faLinkedin,
+  faSquareXTwitter,
+  faSquareWhatsapp,
+  faSquareGithub,
+  faTelegram,
+  faWhatsapp,
 
   // ... poner aqui tambien los iconos de arriba
 );

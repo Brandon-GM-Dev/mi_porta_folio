@@ -19,7 +19,7 @@ function toggleTheme() {
 </script>
 
 <template>
-    <nav class="w-full bg-white border-b border-gray-100 px-4 py-3 flex items-center justify-between shadow-md relative">
+    <nav class="w-full bg-white border-b border-gray-100 px-4 py-4 flex items-center justify-between shadow-md relative">
         <!-- Icono y Nombre -->
         <div class="flex items-center gap-2">
             <div class="flex items-center justify-center">
@@ -53,19 +53,19 @@ function toggleTheme() {
 
             <!-- Modo Claro/Oscuro -->
             <button @click="toggleTheme"
-                class="w-9 h-9 flex items-center justify-center rounded-full border border-gray-300 hover:border-gray-500 text-gray-500 hover:text-gray-800 transition-all duration-200"
+                class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-300 hover:border-gray-500 text-gray-500 hover:text-gray-800 transition-all duration-200"
                 aria-label="Cambiar tema">
-                <font-awesome-icon v-if="!isDark" icon="fa-regular fa-sun" />
-                <font-awesome-icon v-else icon="fa-regular fa-moon" />
+                <font-awesome-icon v-if="!isDark" icon="fa-regular fa-sun" class="text-lg"/>
+                <font-awesome-icon v-else icon="fa-regular fa-moon" class="text-lg"/>
             </button>
 
             <!-- Boton Menu (version movil) -->
             <button @click="menuOpen = !menuOpen"
-                class="lg:hidden w-9 h-9 flex items-center justify-center rounded-full border border-gray-300 hover:border-gray-500 text-gray-600 transition-all duration-200"
+                class="lg:hidden w-10 h-10 flex items-center justify-center rounded-full border border-gray-300 hover:border-gray-500 text-gray-600 transition-all duration-200"
                 aria-label="Abrir menú">
 
-                <font-awesome-icon v-if="!menuOpen" icon="fa-solid fa-bars" />
-                <font-awesome-icon v-else icon="fa-solid fa-xmark" />
+                <font-awesome-icon v-if="!menuOpen" icon="fa-solid fa-bars" class="text-lg"/>
+                <font-awesome-icon v-else icon="fa-solid fa-xmark" class="text-lg"/>
 
             </button>
         </div>
@@ -73,7 +73,7 @@ function toggleTheme() {
         <!-- Menu movil desplegable -->
         <transition name="slide">
             <div v-if="menuOpen"
-                class="absolute top-15 left-0 w-full bg-white border-b border-gray-100 shadow-md z-50 lg:hidden">
+                class="absolute top-15 left-0 w-full text-center bg-white border-b border-gray-100 shadow-md z-50 lg:hidden">
                 <ul class="flex flex-col px-6 py-4 gap-4">
                     <li v-for="link in navLinks" :key="link.label">
                         <a :href="link.href"
