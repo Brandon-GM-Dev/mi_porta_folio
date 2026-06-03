@@ -3,5 +3,7 @@
 </script>
 
 <template>
-    Pagina Cursos
+    <section id="cursos">
+        <h2>Seccion Cursos</h2>
+    </section>
 </template>

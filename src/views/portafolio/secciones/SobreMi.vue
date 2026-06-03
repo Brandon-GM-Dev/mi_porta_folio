@@ -3,5 +3,7 @@
 </script>
 
 <template>
-    Pagina Sobre mi
+    <section id="sobre_mi">
+        <h2>Seccion Sobre mi</h2>
+    </section>
 </template>

@@ -3,5 +3,7 @@
 </script>
 
 <template>
-    Seccion de Proyectos
+    <section id="proyectos">
+        <h2>Seccion proyectos</h2>
+    </section>
 </template>

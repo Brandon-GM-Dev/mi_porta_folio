@@ -6,11 +6,11 @@ const ui = useUiStore();
 const menuOpen = ref(false);
 
 const navLinks = ref([
-    { label: 'Inicio', href: '#', active: true },
-    { label: 'Proyectos', href: '#', active: false },
-    { label: 'Sobre Mí', href: '#', active: false },
-    { label: 'Cursos', href: '#', active: false },
-    { label: 'Contacto', href: '#', active: false },
+    { label: 'Inicio', href: '#inicio', active: true },
+    { label: 'Proyectos', href: '#proyectos', active: false },
+    { label: 'Sobre Mí', href: '#sobre_mi', active: false },
+    { label: 'Cursos', href: '#cursos', active: false },
+    { label: 'Contacto', href: '#contacto', active: false },
 ]);
 </script>
 
