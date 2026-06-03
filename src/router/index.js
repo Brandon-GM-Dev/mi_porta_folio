@@ -1,6 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
-import PortaFolio from "@views/portafolio/PortaFolio.vue";
-
+import PortaFolio from "@views/portafolio/PortafolioView.vue";
 import BaseLayout from "@layouts/BaseLayout.vue";
 
 const router = createRouter({
